@@ -1,0 +1,361 @@
+@charset "utf-8";
+
+/* header */
+
+header{
+    width: 100%;
+    height: 700px;
+    background: url("../img/header_img.jpeg") no-repeat;
+}
+
+/* header_nav */
+
+.menu{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: right;
+}
+.menu ul{
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    padding: 30px 0 0 0;
+}
+.menu ul li{
+    width: 20%;
+    padding: 10px;
+}
+.menu ul li a{
+    width: 50%;
+    color: #555555;
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 0 0 5px;
+}
+.menu ul li a::after {
+	content: '';
+	width: 0;
+    transition: all 0.3s ease;
+    border-bottom: solid 1px #000;
+	display: block;
+}
+.menu ul li a:hover::after {
+	width: 50%;
+	border-bottom: solid 1px #000;
+}
+
+/* header logotitle */
+
+h1{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+}
+.search_btn{
+    width: 100%;
+    text-align: center;
+    margin-top: 250px;
+}
+.search_btn a{
+    color: #000;
+    font-size: 18px;
+    font-weight: 350;
+    text-decoration: none;
+    background: #FFF;
+    padding: 30px;
+    transition: ease 0.3s;
+}
+.search_btn a:hover{
+    opacity: 0.6;
+}
+
+/* main */
+
+.main{
+    width: 100%;
+}
+
+/* select_box */
+
+.select_box{
+    width: 100%;
+}
+.select_box h2{
+    color: #000;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin: 100px 0 130px 0;
+}
+.plan_select{
+    width: 80%;
+    height: 130px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 0 10% 0 10%;
+}
+.st,.pr{
+    border: solid 1px #707070;
+    text-align: center;
+    width: 30%;
+    padding-top: 27px;
+}
+.st h3,.pr h3{
+    font-size: 20px;
+    font-weight: 300;
+}
+.st p,.pr p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.st p span,.pr p span{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+/* input_box */
+
+.input_box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+main h2{
+    color: #000;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    margin: 200px 0 100px 0;
+}
+
+/* input_style */
+
+.style{
+    width: 100%;
+}
+.title{
+    width: 100%;
+    height: 50px;
+    background: #E8E8E8;
+}
+.title p{
+    width: 40%;
+    height: 100%;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 25px;
+}
+.title p span{
+    width: 20%;
+    color: #ff0000;
+    font-size: 10px;
+    font-weight: 400;
+    padding-top: 2px;
+    text-align: right;
+}
+
+/* input */
+
+.input_style01{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
+.input_style01 input{
+    width: 90%;
+    height: 100%;
+    border: solid 1px #707070;
+    padding-left: 20px;
+}
+.input_style02{
+    width: 100%;
+    height: 50px;
+    margin: 25px 0;
+    padding-right: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+.input_style02 input{
+    width: 35%;
+    border: solid 1px #707070;
+    padding-left: 15px;
+    margin-right: 2%;
+}
+.input_style03{
+    width: 100%;
+    height: 50px;
+    margin: 25px 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.input_style03 input:first-child{
+    width: 20%;
+    height: 50px;
+    margin-left: 5.5%;
+    padding-left: 10px;
+    border: solid 1px #707070;
+}
+.input_style03 input:nth-child(3){
+    width: 25%;
+    height: 50px;
+    padding-left: 10px;
+    border: solid 1px #707070;
+}
+.input_style03 span{
+    width: 5%;
+    margin: 25px 10px 0 10px;
+    border-top: solid 2px #000;
+    display: flex;
+}
+.credit{
+    width: 100%;
+}
+.card_number p:first-child{
+    width: 17%;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: right;
+    margin: 20px 0 10px 0;
+}
+.card_number p:nth-child(2){
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.card_number p input{
+    width: 90%;
+    height: 100%;
+    border: solid 1px #707070;
+    padding-left: 20px;
+}
+.limit{
+    width: 100%;
+}
+.limit p:first-child{
+    width: 15%;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: right;
+    margin: 20px 0 10px 0;
+}
+.limit_box{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+}
+.month{
+    width: 35%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.month p:first-child{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    justify-content: left;
+}
+.month p:first-child select{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: solid 1px #707070;
+}
+.month p:first-child select option{
+    width: 100%;
+    height: 100%;
+}
+.month p:nth-child(2){
+    width: 30%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.year{
+    width: 35%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.year p:first-child{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    justify-content: left;
+}
+.year p:first-child select{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: solid 1px #707070;
+}
+.year p:first-child select option{
+    width: 100%;
+    height: 100%;
+}
+.year p:nth-child(2){
+    width: 30%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* check */
+
+.check{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin: 50px 0;
+}
+.check label{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+}
+.check p{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+}
+.check p span{
+    font-size: 19px;
+}
+
+/* button */
+
+.submit{
+    width: 100%;
+    margin-top: 80px;
+}
+.submit p{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.submit p input{
+    width: 50%;
+    height: 70px;
+    background: #E8E8E8;
+    font-size: 20px;
+    font-weight: 400;
+}
+.submit p input:hover{
+    opacity: 0.7;
+}
